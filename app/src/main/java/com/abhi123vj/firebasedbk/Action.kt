@@ -38,6 +38,8 @@ import java.io.File
 import java.nio.file.Paths
 import java.util.jar.Manifest
 
+//Da mwone sugamaaano.. Thes is for testing purpose mwone
+
 class Action : AppCompatActivity() {
 
 
@@ -73,7 +75,7 @@ class Action : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
         if(requestCode==1 && resultCode== Activity.RESULT_OK&&data!=null &&data.getData()!=null)
-          uploadPDFfile(data.getData())
+          uploadPDFfile(data.getData()!!)
 
     }
 
